@@ -1,10 +1,10 @@
-import Component from './Component';
+import * as React from 'react';
 
 import ReactDOM from 'react-dom';
 
 import { onTick } from './EventHandler';
 
-class App extends Component {
+class App extends React.Component {
 
 	constructor () {
 		super();
@@ -31,4 +31,4 @@ class App extends Component {
 	}
 }
 
-ReactDOM.render(<App />, document.body.firstElementChild);
+ReactDOM.render(<App />, document.getElementById("index_container"));

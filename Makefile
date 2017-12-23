@@ -26,7 +26,8 @@ ESLINT_FLAGS := --fix
 
 BROWSERIFY := $(ENV) node_modules/browserify/bin/cmd.js
 BABELIFY := babelify --presets [ env react ] --plugins [ transform-class-properties ]
-BROWSERIFY_FLAGS := -d -t [ $(BABELIFY) ] -g [ envify --$(ENV) ] -g uglifyify
+BROWSERIFY_FLAGS := -d -t [ $(BABELIFY) ]
+#BROWSERIFY_FLAGS := -d -t [ $(BABELIFY) ] -g [ envify --$(ENV) ] -g uglifyify
 
 
 UGLIFY := node_modules/uglify-js/bin/uglifyjs --compress --mangle
@@ -44,7 +45,7 @@ serve: all
 clean:
 	rm -rf $(WORK_DIR)
 
-.PHONY: clean all serve 
+.PHONY: clean all serve
 
 install:
 	$(NPM_INSTALL)
@@ -55,7 +56,8 @@ $(WORK_DIR):
 
 $(JS_TARGET): $(ENTRY_JS) $(SRC_JS)
 	$(ESLINT) $^ $(ESLINT_FLAGS)
-	$(BROWSERIFY) $< $(BROWSERIFY_FLAGS) | $(UGLIFY) > $@ 
+#	$(BROWSERIFY) $< $(BROWSERIFY_FLAGS) | $(UGLIFY) > $@
+	$(BROWSERIFY) $< $(BROWSERIFY_FLAGS) > $@
 
 $(CSS_TARGET): $(SRC_SCSS)
 	cat $^ >& $@
