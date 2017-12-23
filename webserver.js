@@ -3,24 +3,18 @@
 const http = require("http");
 const fs = require("fs");
 
-
-const checkError = (response, e) => {
-	if (e) {
-		console.error(`Error found.`);
-		console.error(e.message);
-		response.write("Error!", () => {
-			response.end();
-		});
-		return true;
-	}
-	return false;
-};
-
 const respondWithFile = (response, fileName, headers) => {
 	fs.readFile(fileName, (err, file) => {
-		if (checkError(response, err)) { return; }
-		response.writeHead(200, headers);
-		response.write(file, () => { response.end(); });
+		if (err) {
+			console.error(`Error found.`);
+			console.error(err.message);
+			response.write("Error!", () => {
+				response.end();
+			});
+		} else {
+			response.writeHead(200, headers);
+			response.write(file, () => { response.end(); });
+		}
 	});
 };
 
@@ -33,11 +27,9 @@ const requestListener = (request, response) => {
 		respondWithFile(response, "work/bundle.css", {"Content-Type": "text/css"});
 	} else if (url == "/js") {
 		respondWithFile(response, "work/bundle.js", {"Content-Type": "text/javascript"});
-	} else if (url == "/jslib") {
-		respondWithFile(response, "work/bundle-lib.js", {"Content-Type": "text/javascript"});
 	} else {
 		console.error(`Uh oh.. ${url} not found..`);
-		response.writeHead(404);
+		response.writeHead(403 );
 		response.end();
 	}
 };
