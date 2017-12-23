@@ -1,6 +1,5 @@
 import Component from './Component';
 
-import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { onTick } from './EventHandler';
