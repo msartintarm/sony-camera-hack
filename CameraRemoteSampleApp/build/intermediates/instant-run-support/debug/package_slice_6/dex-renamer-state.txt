@@ -1,4 +1,0 @@
-#Mon Dec 25 23:13:13 PST 2017
-base.0=C\:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\transforms\\dexMerger\\debug\\6
-path.0=classes.dex
-renamed.0=classes.dex

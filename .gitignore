@@ -8,3 +8,9 @@ node_modules/
 package-lock.json
 
 work/
+
+# Android Studio stuffs
+CameraRemoteSampleApp/build/
+CameraRemoteSampleApp/.gradle/
+CameraRemoteSampleApp/.idea/workspace.xml
+
