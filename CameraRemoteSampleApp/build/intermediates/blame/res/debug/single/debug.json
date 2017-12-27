@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_activity_device_discovery.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\activity_device_discovery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_activity_still_content.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\activity_still_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_activity_contents_grid.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\activity_contents_grid.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_activity_sample_camera.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\activity_sample_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_date_list_item.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\date_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_activity_date_list.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\activity_date_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\drawable_picture_wipe_boarder.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\drawable\\picture_wipe_boarder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_photo_grid_item.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\photo_grid_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\CameraRemoteSampleApp\\build\\intermediates\\res\\merged\\debug\\layout_device_list_item.xml.flat",
+        "source": "C:\\Users\\Michael\\CameraRemoteSampleApp\\src\\main\\res\\layout\\device_list_item.xml"
+    }
+]
